@@ -24,6 +24,25 @@
             "request": "launch",
             "script": "${workspaceFolder}/DevOps/NewcomerSetup/NodeJsEnvSetup.ps1 -projectDirectory '${workspaceFolder}\\frontend\\test'",
             "args": []
-        }
+        },
+        {
+            "name": "Launch Edge against localhost",
+            "type": "msedge",
+            "request": "launch",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/frontend/frakenstein-portfolio/src",
+            "sourceMaps": true,
+            "skipFiles": ["node_modules/**"],
+            "smartStep": true
+          },
+          {
+            "name": "Attach to Edge",
+            "type": "msedge",
+            "request": "attach",
+            "port": 9222,
+            "webRoot": "${workspaceFolder}/frontend/frakenstein-portfolio/src",
+            "sourceMaps": true,
+            "skipFiles": ["node_modules/**"]
+          }
     ]
 }
