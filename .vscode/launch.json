@@ -10,6 +10,12 @@
             "request": "launch",
             "script": "${workspaceFolder}/DevOps/VersionSourceControl/UpdateTools.ps1",
             "args": []
+        },
+        {
+            "name": "Python venv update",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/DevOps/NewcomerSetup/PythonEvnSetup.ps1 -projectRepo '${workspaceFolder}' -PipRequirement '${workspaceFolder}\\requirements.txt'",
+            "args": []
         }
-    ]
 }
