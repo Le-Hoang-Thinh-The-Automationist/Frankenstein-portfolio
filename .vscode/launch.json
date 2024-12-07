@@ -17,5 +17,13 @@
             "request": "launch",
             "script": "${workspaceFolder}/DevOps/NewcomerSetup/PythonEvnSetup.ps1 -projectRepo '${workspaceFolder}' -PipRequirement '${workspaceFolder}\\requirements.txt'",
             "args": []
+        },
+        {
+            "name": "NodeJS environment update",
+            "type": "PowerShell",
+            "request": "launch",
+            "script": "${workspaceFolder}/DevOps/NewcomerSetup/NodeJsEnvSetup.ps1 -projectDirectory '${workspaceFolder}\\frontend\\test'",
+            "args": []
         }
+    ]
 }
