@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "shop_app",
     # Should add this app in order to use the rest_framework api
     "rest_framework",
+    # Add to allow for the in-browser request for django application
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +53,16 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    # Add the middleware below
+    "corsheaders.middleware.CorsMiddleware",
+    # "django.middleware.common.CommonMiddleware", # (Add if not exists)
+]
+
+CORS_ALLOWED_ORIGINS = [
+    # The allowed frontend domain to access to the backend Django App
+    "http://localhost:5173",  # The port for the ReactJS
+    "http://localhost:5174",  # The port for the WebBrowser
+    "http://localhost:5175",
 ]
 
 ROOT_URLCONF = "ecommerce_project.urls"
