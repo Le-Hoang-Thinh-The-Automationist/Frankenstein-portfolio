@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "core",
     "shop_app",
+    # Should add this app in order to use the rest_framework api
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
