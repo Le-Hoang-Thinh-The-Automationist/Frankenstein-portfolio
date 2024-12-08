@@ -13,8 +13,9 @@ class Product(models.Model):
     name = models.CharField(max_length=100)
     # SlugField is used to create a slug for the URL
     slug = models.SlugField(blank=True, null=True)
+    # Before using this ImageField, the Python package `Pillow` should be installed
     # ImageField is a FileField. The images will be uploaded to the URL './img'
-    # the upload can either be:
+    # The upload can either be:
     #   1. string type
     #   2. Callback function with two argument instance and
     #      filename that should return the string value

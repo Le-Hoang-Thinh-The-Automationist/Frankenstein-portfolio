@@ -18,8 +18,7 @@ from django.contrib.auth.models import AbstractUser
 
 class CustomerUser(AbstractUser):
     # Adress info are needed for delivery
-    username = models.CharField(max_length=50)
-    # gender = models.
+    # The `username` is not allowed because the AbstractUser has already declared it.
 
     # Adress info are needed for delivery
     city = models.CharField(max_length=100)
