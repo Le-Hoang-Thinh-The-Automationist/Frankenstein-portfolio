@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
+    "shop_app",
 ]
 
 MIDDLEWARE = [
@@ -123,5 +124,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# The authentication model has to be declared in the setting in order to use the AbstractUser model
+# The authentication model has to be declared in
+# the setting in order to use the AbstractUser model
 AUTH_USER_MODEL = "core.CustomerUser"
