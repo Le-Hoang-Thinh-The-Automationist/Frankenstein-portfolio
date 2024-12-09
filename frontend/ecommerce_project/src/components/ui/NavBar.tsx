@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
 import { FaCartShopping } from 'react-icons/fa6'
-import NavLink from './NavLink'
+import NavBarLink from './NavBarLink'
 
 const NavBar = () => {
   return (
@@ -22,7 +22,7 @@ const NavBar = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div className='collapse navbar-collapse' id="navbarContent">
-          <NavLink />
+          <NavBarLink />
           <Link to="/cart" className={`btn btn-dark ns-3 rounded-pill position-relative ${styles.responsiveCart}`}>
             <FaCartShopping />
             <span
