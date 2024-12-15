@@ -1,7 +1,7 @@
 import HomeCard from './HomeCard';
 
 type CardContainerProps = {
-  products: string[];
+  products: any[];
 }
 
 
